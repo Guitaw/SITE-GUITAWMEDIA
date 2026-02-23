@@ -19,6 +19,7 @@ import {
   X
 } from "lucide-react";
 import { useState, useRef } from "react";
+import { Logo } from "./components/Logo";
 
 const COLORS = {
   yellow: "var(--color-agency-yellow)",
@@ -68,11 +69,8 @@ export default function App() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-agency-dark/5">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="text-2xl font-black tracking-tighter flex flex-col leading-none">
-              <span className="text-agency-dark">GUITAW</span>
-              <span className="text-[10px] tracking-[0.4em] font-medium text-agency-dark/60">MEDIA</span>
-            </div>
+          <div className="flex items-center">
+            <Logo className="h-12 w-auto text-agency-dark" />
           </div>
 
           {/* Desktop Nav */}
@@ -358,11 +356,8 @@ export default function App() {
       {/* Footer */}
       <footer className="py-12 bg-agency-dark text-white border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex items-center space-x-2">
-            <div className="text-xl font-black tracking-tighter flex flex-col leading-none">
-              <span className="text-agency-yellow">GUITAW</span>
-              <span className="text-[8px] tracking-[0.4em] font-medium text-white/40">MEDIA</span>
-            </div>
+          <div className="flex items-center">
+            <Logo className="h-10 w-auto text-agency-yellow" />
           </div>
           
           <div className="text-sm font-medium text-white/40">
